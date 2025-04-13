@@ -71,7 +71,7 @@ export default function Header() {
 
                 <div className="mt-10 w-full max-w-5xl relative rounded-4xl overflow-hidden">
                     <Image
-                        src={`/placeholder/background_omc.png`}
+                        src={`./placeholder/homepage.webp`}
                         alt="Placeholder"
                         width={1280}
                         height={720}
