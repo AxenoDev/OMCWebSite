@@ -70,6 +70,16 @@ export default function Header() {
                                 </Link>
                             </Button>
                         </div>
+                        <p className="mt-4 text-sm text-muted-foreground text-center">
+                          Fièrement hébergé par{" "}
+                          <Link
+                            href="https://sandblockstudios.com/"
+                            target="_blank"
+                            className="underline underline-offset-2 hover:text-primary"
+                          >
+                            SandBlock Studios
+                          </Link>
+                        </p>
                     </div>
                 </div>
 
@@ -103,6 +113,7 @@ export default function Header() {
                         ))}
                     </div>
                 </section>
+                
             </section>
         </div>
     );
