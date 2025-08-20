@@ -116,6 +116,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-geist-sans);
@@ -123,11 +124,13 @@
 }
 
 @keyframes shiny-text {
+
   0%,
   90%,
   100% {
     background-position: calc(-100% - var(--shiny-width)) 0;
   }
+
   30%,
   60% {
     background-position: calc(100% + var(--shiny-width)) 0;
@@ -147,20 +150,38 @@
     transform: scale(1) rotate(0deg);
     fill: none;
   }
+
   25% {
     transform: scale(1.2) rotate(15deg);
     fill: #e63946;
     color: #e63946;
   }
+
   50% {
     transform: scale(0.9) rotate(-15deg);
   }
+
   75% {
     transform: scale(1.1) rotate(5deg);
   }
+
   100% {
     transform: scale(1) rotate(0deg);
     color: #e63946;
     fill: #e63946;
   }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) skewX(-12deg);
+  }
+
+  100% {
+    transform: translateX(200%) skewX(-12deg);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
 }
